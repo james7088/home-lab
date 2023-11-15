@@ -1,0 +1,26 @@
+---
+# tasks file for update-system
+  - name: update the system with latest
+    ansible.builtin.dnf:
+      name: '*'
+      state: latest
+
+  - name: git
+    ansible.builtin.dnf:
+      name: 'git'
+      state: latest
+
+  - name: ansisble
+    ansible.builtin.dnf:
+      name: 'ansible'
+      state: latest
+
+  - name: tree
+    ansible.builtin.dnf:
+      name: 'tree'
+      state: latest
+
+  - name: htop
+    ansible.builtin.dnf:
+      name: 'htop'
+      state: latest

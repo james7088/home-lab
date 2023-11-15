@@ -1,0 +1,13 @@
+---
+#- name: System setup and configuration
+#  hosts: localhost
+#  become: yes
+# tasks: 
+#    - name: htop
+ #     ansible.builtin.package:
+#        name: htop
+#        state: absent
+- hosts: localhost
+  become: yes
+  roles:
+    - roles/update-system
