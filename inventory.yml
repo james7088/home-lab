@@ -1,0 +1,5 @@
+linux:
+  hosts:
+    rocky01:
+      ansible_host: 192.168.86.74
+      remote_user: jtrickel
